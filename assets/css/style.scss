@@ -2385,8 +2385,14 @@ body#page_lp.lp_2026_spring {
 
             @include mq(tbsm) {
               width: 40%;
-              margin-top: 0;
+              // margin-top: 0;
               height: 100%;
+              margin-bottom: rem(16);
+            }
+
+            @include mq(sp) {
+              margin-top: 0;
+              margin-bottom: 0;
             }
 
             .product__img {
@@ -2437,6 +2443,7 @@ body#page_lp.lp_2026_spring {
               font-weight: 700;
 
               @include mq(tbsm) {
+                font-size: rem(20);
                 margin-bottom: rem(24);
               }
 
@@ -2496,6 +2503,12 @@ body#page_lp.lp_2026_spring {
 
             @include mq(tbsm) {
               width: 40%;
+              margin-top: rem(-24);
+              margin-bottom: rem(16);
+              padding-inline: rem(8);
+            }
+
+            @include mq(sp) {
               margin-top: 0;
             }
           }
@@ -2518,9 +2531,12 @@ body#page_lp.lp_2026_spring {
             width: 95%;
 
             @include mq(tbsm) {
-              margin-top: 0;
-
+              // margin-top: 0;
               width: 40%;
+            }
+
+            @include mq(sp) {
+              margin-top: 0;
             }
           }
         }
@@ -2577,6 +2593,10 @@ body#page_lp.lp_2026_spring {
             margin-top: rem(-56);
 
             @include mq(tbsm) {
+              // margin-top: 0;
+            }
+
+            @include mq(sp) {
               margin-top: 0;
             }
 
@@ -2668,9 +2688,6 @@ body#page_lp.lp_2026_spring {
             }
 
             .product__img {
-              // max-height: rem(280);
-              width: auto;
-
               @include mq(sp) {
                 width: 100%;
                 max-height: none;
@@ -2717,7 +2734,7 @@ body#page_lp.lp_2026_spring {
 
             @media screen and (max-width: 1330px) {
               width: 60%;
-}
+            }
           }
         }
       }
