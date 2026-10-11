@@ -3404,6 +3404,11 @@ body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_stat
   max-width: 50rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small {
+    max-width: 37.5rem;
+  }
+}
 body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small li .text_pink {
   color: #e75f9c;
   font-weight: 900;

@@ -3310,7 +3310,9 @@ body#page_lp.lp_2026_spring {
           max-width: rem(800);
           margin: 0 auto;
 
-          
+          @include mq(tbsm) {
+          max-width: rem(600);
+          }
 
           li {
             .text_pink {
