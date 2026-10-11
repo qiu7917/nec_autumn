@@ -57,7 +57,7 @@ $base_font: "Yu Gothic", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN
 
 // カラー
 $white: #fff;
-$black: #000000;
+$black: #4d4d4d;
 $all_bg: #f7f7f7;
 $main_color: #00a9f7;
 $red: #ff2929;
@@ -85,7 +85,7 @@ html {
 
 body {
   min-height: 100vh;
-  line-height: 1.75;
+  line-height: 1.5;
   text-rendering: optimizeSpeed;
   margin: 0;
   background-color: $all_bg;
@@ -286,6 +286,11 @@ ul.dot_list_small>li,
   display: block;
   position: relative;
   padding-left: 0.5em;
+  // margin-bottom: rem(8);
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   &::before {
     content: "・";
@@ -303,6 +308,11 @@ ul.dot_list_small>li,
   >li {
     position: relative;
     padding-left: 1em;
+    // margin-bottom: rem(8);
+
+    // &:last-child {
+    //   margin-bottom: 0;
+    // }
 
     span.number {
       position: absolute;
@@ -882,6 +892,11 @@ ul.kome_mark_list>li,
   position: relative;
   display: block;
   padding-left: 1em;
+  // margin-bottom: rem(8);
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   &::before {
     content: "※";
@@ -897,6 +912,11 @@ ul.small_kome_mark_list>li,
   position: relative;
   display: block;
   padding-left: 1em;
+  // margin-bottom: rem(8);
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   &::before {
     content: "*";
@@ -931,6 +951,9 @@ ul.dot_circle_list>li,
   position: relative;
   display: block;
   padding-left: 1.25em;
+
+  &:last-child {
+  }
 
   &::before {
     content: "●";
@@ -1197,6 +1220,7 @@ body.subpage section .innerbox_1200_0 {
   justify-content: center;
   align-items: center;
   min-width: 50rem;
+  height: rem(110);
   min-height: 5rem;
   font-size: rem(38);
   font-weight: 700;
@@ -2473,6 +2497,12 @@ body#page_lp.lp_2026_spring {
               li {
                 text-indent: rem(20);
                 position: relative;
+                line-height: 1.4;
+                margin-bottom: rem(6);
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
 
                 &::before {
                   content: "※";
@@ -2745,7 +2775,7 @@ body#page_lp.lp_2026_spring {
 
   section#details {
     .details_upper {
-      padding-bottom: rem(140);
+      padding-bottom: rem(72);
 
       @include mq(sp) {
         padding-bottom: rem(48);
@@ -2767,10 +2797,13 @@ body#page_lp.lp_2026_spring {
         position: relative;
         z-index: 400;
         display: block;
-        margin-bottom: rem(8);
 
-        @include mq(tbsm) {
-          margin-bottom: rem(4);
+        &:last-child {
+          margin-bottom: rem(8);
+
+          // @include mq(tbsm) {
+          //   margin-bottom: rem(4);
+          // }
         }
 
         &::after {
@@ -2816,12 +2849,20 @@ body#page_lp.lp_2026_spring {
     .details_attentions {
       font-size: rem(18);
       line-height: calc(30 / 18);
-      margin-top: rem(86);
+      margin-top: rem(62);
 
       @include mq(tbsm) {
         font-size: rem(14);
-        // padding: rem(16);
         margin-top: rem(36);
+      }
+
+      .dot_list_small>li {
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      .circle_number_list>li {
+        margin-bottom: 0;
 
       }
 
@@ -2829,9 +2870,9 @@ body#page_lp.lp_2026_spring {
         margin: 0 rem(8);
       }
 
-      .title__blue_border__circle {
-        margin: rem(32) 0 rem(20);
-      }
+      // .title__blue_border__circle {
+      //   margin: rem(32) 0 rem(20);
+      // }
     }
   }
 
@@ -2876,11 +2917,11 @@ body#page_lp.lp_2026_spring {
     }
 
     .flow_item {
-      margin-top: rem(86);
+      margin-top: rem(80);
       position: relative;
 
       &:first-child {
-        margin-top: rem(120);
+        margin-top: rem(142);
       }
 
       &::before {
@@ -2930,7 +2971,7 @@ body#page_lp.lp_2026_spring {
 
       &__text_wrapper {
         width: 100%;
-        padding: rem(48) rem(96) rem(48) rem(48);
+        padding: rem(48) rem(80) rem(48) rem(48);
         border: 2px solid #004c90;
         background-color: $white;
 
@@ -3256,6 +3297,7 @@ body#page_lp.lp_2026_spring {
 
           .bold {
             font-size: rem(26);
+            margin-bottom: rem(8);
 
             @include mq(tbsm) {
               font-size: rem(16);
@@ -3264,7 +3306,7 @@ body#page_lp.lp_2026_spring {
           }
         }
 
-        .dot_list {
+        .dot_list_small {
           max-width: 800px;
           margin: 0 auto;
 
@@ -3388,11 +3430,12 @@ body#page_lp.lp_2026_spring {
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.5s ease;
-          background-color: $white;
+          background-color: #dcf0fd;
 
           &__inner {
             padding: rem(16) rem(32);
             border: 1px solid #94c0d6;
+            
 
             @include mq(tbsm) {
               padding: rem(8) rem(16);
@@ -3435,7 +3478,7 @@ body#page_lp.lp_2026_spring {
             }
 
             dt {
-              // font-weight: 700;
+              font-weight: 700;
               margin-top: rem(16);
 
               &::before {
@@ -3457,7 +3500,7 @@ body#page_lp.lp_2026_spring {
                 background-color: #11bdf3;
               }
 
-              .dd__red {
+              .red {
                 color: $red;
                 font-weight: 700;
               }

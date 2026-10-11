@@ -20,7 +20,7 @@ html {
 
 body {
   min-height: 100vh;
-  line-height: 1.75;
+  line-height: 1.5;
   text-rendering: optimizeSpeed;
   margin: 0;
   background-color: #f7f7f7;
@@ -58,7 +58,7 @@ body {
 }
 
 body {
-  color: #000000;
+  color: #4d4d4d;
 }
 
 .text_blue {
@@ -1066,6 +1066,7 @@ body.subpage section .innerbox_1200_0 {
   justify-content: center;
   align-items: center;
   min-width: 50rem;
+  height: 6.875rem;
   min-height: 5rem;
   font-size: 2.375rem;
   font-weight: 700;
@@ -1119,7 +1120,7 @@ body.subpage section .innerbox_1200_0 {
   width: 100%;
 }
 .tab_buttons .tab_button {
-  color: #000000;
+  color: #4d4d4d;
   background: unset;
 }
 
@@ -2044,7 +2045,7 @@ body#page_selectBank .form_item__service_intro__arrowtext::before {
   line-height: 1;
   letter-spacing: 0;
   color: #fff;
-  background-color: #000000;
+  background-color: #4d4d4d;
   border-radius: 50%;
 }
 body#page_firstForm .form_item__main_text,
@@ -2254,7 +2255,7 @@ body#page_selectBank .form_item__image_register__input_item__content .filename_w
   min-width: 13.75rem;
   font-size: 1.0625rem;
   line-height: 1.75;
-  color: #000000;
+  color: #4d4d4d;
 }
 @media screen and (max-width: 768px) {
   body#page_firstForm .form_item__image_register__input_item__content .filename_wrapper .filename,
@@ -2744,6 +2745,11 @@ body#page_lp.lp_2026_spring section#products .product_item__more__box .product_i
 body#page_lp.lp_2026_spring section#products .product_item__more__box .product_item__more__text .product_item__model__note li {
   text-indent: 1.25rem;
   position: relative;
+  line-height: 1.4;
+  margin-bottom: 0.375rem;
+}
+body#page_lp.lp_2026_spring section#products .product_item__more__box .product_item__more__text .product_item__model__note li:last-child {
+  margin-bottom: 0;
 }
 body#page_lp.lp_2026_spring section#products .product_item__more__box .product_item__more__text .product_item__model__note li::before {
   content: "※";
@@ -2970,7 +2976,7 @@ body#page_lp.lp_2026_spring section#products .product_item.product_item__03 .pro
   }
 }
 body#page_lp.lp_2026_spring section#details .details_upper {
-  padding-bottom: 8.75rem;
+  padding-bottom: 4.5rem;
 }
 @media screen and (max-width: 480px) {
   body#page_lp.lp_2026_spring section#details .details_upper {
@@ -2992,12 +2998,9 @@ body#page_lp.lp_2026_spring section#details .details_overview span {
   position: relative;
   z-index: 400;
   display: block;
-  margin-bottom: 0.5rem;
 }
-@media screen and (max-width: 768px) {
-  body#page_lp.lp_2026_spring section#details .details_overview span {
-    margin-bottom: 0.25rem;
-  }
+body#page_lp.lp_2026_spring section#details .details_overview span:last-child {
+  margin-bottom: 0.5rem;
 }
 body#page_lp.lp_2026_spring section#details .details_overview span::after {
   content: "";
@@ -3038,7 +3041,7 @@ body#page_lp.lp_2026_spring section#details .underline_purple {
 body#page_lp.lp_2026_spring section#details .details_attentions {
   font-size: 1.125rem;
   line-height: 1.6666666667;
-  margin-top: 5.375rem;
+  margin-top: 3.875rem;
 }
 @media screen and (max-width: 768px) {
   body#page_lp.lp_2026_spring section#details .details_attentions {
@@ -3046,11 +3049,15 @@ body#page_lp.lp_2026_spring section#details .details_attentions {
     margin-top: 2.25rem;
   }
 }
+body#page_lp.lp_2026_spring section#details .details_attentions .dot_list_small > li {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+body#page_lp.lp_2026_spring section#details .details_attentions .circle_number_list > li {
+  margin-bottom: 0;
+}
 body#page_lp.lp_2026_spring section#details .details_attentions .disp_ib {
   margin: 0 0.5rem;
-}
-body#page_lp.lp_2026_spring section#details .details_attentions .title__blue_border__circle {
-  margin: 2rem 0 1.25rem;
 }
 body#page_lp.lp_2026_spring .bg_02_area {
   position: relative;
@@ -3087,11 +3094,11 @@ body#page_lp.lp_2026_spring section#flow .flow_items_wrapper {
   list-style: none;
 }
 body#page_lp.lp_2026_spring section#flow .flow_item {
-  margin-top: 5.375rem;
+  margin-top: 5rem;
   position: relative;
 }
 body#page_lp.lp_2026_spring section#flow .flow_item:first-child {
-  margin-top: 7.5rem;
+  margin-top: 8.875rem;
 }
 body#page_lp.lp_2026_spring section#flow .flow_item::before {
   content: "";
@@ -3124,7 +3131,7 @@ body#page_lp.lp_2026_spring section#flow .flow_item .flow_item_inner {
 }
 body#page_lp.lp_2026_spring section#flow .flow_item__text_wrapper {
   width: 100%;
-  padding: 3rem 6rem 3rem 3rem;
+  padding: 3rem 5rem 3rem 3rem;
   border: 2px solid #004c90;
   background-color: #fff;
 }
@@ -3385,6 +3392,7 @@ body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_stat
 }
 body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .check_status_box__blue .bold {
   font-size: 1.625rem;
+  margin-bottom: 0.5rem;
 }
 @media screen and (max-width: 768px) {
   body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .check_status_box__blue .bold {
@@ -3392,15 +3400,15 @@ body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_stat
     text-align: left;
   }
 }
-body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list {
+body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small {
   max-width: 800px;
   margin: 0 auto;
 }
-body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list li .text_pink {
+body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small li .text_pink {
   color: #e75f9c;
   font-weight: 900;
 }
-body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list li::before {
+body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small li::before {
   content: "・";
 }
 body#page_lp.lp_2026_spring section#check_status .check_status_inner .grey_btn {
@@ -3494,7 +3502,7 @@ body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  background-color: #fff;
+  background-color: #dcf0fd;
 }
 body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box__inner {
   padding: 1rem 2rem;
@@ -3544,6 +3552,7 @@ body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box
   }
 }
 body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box__inner dt {
+  font-weight: 700;
   margin-top: 1rem;
 }
 body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box__inner dt::before {
@@ -3562,7 +3571,7 @@ body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box
   content: "A";
   background-color: #11bdf3;
 }
-body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box__inner dd .dd__red {
+body#page_lp.lp_2026_spring section#faq .accordion_area .acc_item .accordion_box__inner dd .red {
   color: #ff2929;
   font-weight: 700;
 }
@@ -3878,7 +3887,7 @@ body#page_status section#status .customer_name {
   min-width: 15.625rem;
   min-height: 2.5rem;
   padding: 0.25rem 1rem;
-  border: 0.0625rem solid #000000;
+  border: 0.0625rem solid #4d4d4d;
   margin: 3rem auto 0;
   font-size: 1.125rem;
   font-weight: 700;
