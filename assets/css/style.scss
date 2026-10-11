@@ -2543,6 +2543,10 @@ body#page_lp.lp_2026_spring {
         max-width: 900px;
         margin: 0 auto;
 
+        @include mq(tbsm) {
+          width: 100%;
+        }
+
         .product_item__more__box {
           flex-direction: row;
           padding: rem(16) rem(36);
@@ -2698,6 +2702,7 @@ body#page_lp.lp_2026_spring {
 
           .product_item__more__img {
             left: 1%;
+            top: -15%;
 
             .product__img {
               width: 100%;
