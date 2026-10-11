@@ -2415,7 +2415,7 @@ body#page_lp.lp_2026_spring {
 
             .product_item__name__big {
               font-weight: 600;
-              line-height: 0.9;
+              line-height: 1;
               white-space: nowrap;
               letter-spacing: -0.03em;
               font-size: rem(60);
@@ -2668,7 +2668,7 @@ body#page_lp.lp_2026_spring {
             }
 
             .product__img {
-              max-height: rem(280);
+              // max-height: rem(280);
               width: auto;
 
               @include mq(sp) {
@@ -2695,7 +2695,6 @@ body#page_lp.lp_2026_spring {
         .product_item__more__box.T11 {
           padding: rem(16) rem(36) rem(16) rem(16);
 
-          // margin-top: rem(86);
           &::before {
             background: #b6d56a;
           }
@@ -2712,6 +2711,14 @@ body#page_lp.lp_2026_spring {
               object-fit: contain;
             }
           }
+
+          .product_item__more__text {
+            width: 62%;
+
+            @media screen and (max-width: 1330px) {
+              width: 60%;
+}
+          }
         }
       }
     }
@@ -2721,7 +2728,6 @@ body#page_lp.lp_2026_spring {
 
   section#details {
     .details_upper {
-      // padding-top: rem(48);
       padding-bottom: rem(140);
 
       @include mq(sp) {
@@ -2747,9 +2753,7 @@ body#page_lp.lp_2026_spring {
         margin-bottom: rem(8);
 
         @include mq(tbsm) {
-          // padding-bottom: rem(4);
           margin-bottom: rem(4);
-
         }
 
         &::after {
@@ -2767,7 +2771,6 @@ body#page_lp.lp_2026_spring {
           @include mq(tbsm) {
             height: rem(4);
             bottom: 4px;
-
           }
         }
       }
@@ -2796,11 +2799,7 @@ body#page_lp.lp_2026_spring {
     .details_attentions {
       font-size: rem(18);
       line-height: calc(30 / 18);
-      // background-color: $white;
-      /* padding: rem(24); */
-      // padding: rem(48) rem(50) rem(54);
       margin-top: rem(86);
-      // border-radius: rem(16);
 
       @include mq(tbsm) {
         font-size: rem(14);
