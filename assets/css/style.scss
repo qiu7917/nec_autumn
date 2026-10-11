@@ -3307,8 +3307,10 @@ body#page_lp.lp_2026_spring {
         }
 
         .dot_list_small {
-          max-width: 800px;
+          max-width: rem(800);
           margin: 0 auto;
+
+          
 
           li {
             .text_pink {

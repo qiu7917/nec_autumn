@@ -3401,7 +3401,7 @@ body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_stat
   }
 }
 body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
 }
 body#page_lp.lp_2026_spring section#check_status .check_status_inner .check_status_box .dot_list_small li .text_pink {
